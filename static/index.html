@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Business Report AI</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>📊 Business Report AI</h1>
+
+  <!-- Upload -->
+  <div class="card">
+    <input type="file" id="fileInput">
+    <button onclick="upload()">Analyze Report</button>
+    <p id="loading" class="loading hidden">⏳ Analyzing report… please wait</p>
+  </div>
+
+  <!-- Analysis Output -->
+  <div id="analysis" class="card hidden">
+    <h2>📌 Summary</h2>
+    <p id="summary"></p>
+
+    <h2>🔍 Important Observations</h2>
+    <ul id="observations"></ul>
+
+    <h2>✅ Suggested Actions</h2>
+    <ul id="actions"></ul>
+  </div>
+
+  <!-- Chat -->
+  <div id="chatSection" class="card hidden">
+    <h2>💬 Ask Questions</h2>
+
+    <div id="chatBox"></div>
+
+    <div class="chat-input">
+      <input type="text" id="question" placeholder="Ask about the report...">
+      <button onclick="ask()">Send</button>
+    </div>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
