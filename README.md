@@ -1,5 +1,5 @@
 # Business Report AI (Local & Offline)
-
+- [Demo Video](https://mega.nz/file/6oYAQbQb#i5hT3eJQQT2dLuU8xOcJDoEJ1C7rU4sG3Dl3kTNNQDU)
 ## Requirements (Install These)
 - Python 3.10+
 - Ollama installed (If error, Add to system paths)
@@ -11,4 +11,5 @@
 ## Just paste these in the terminal to start using
 pip install -r requirements.txt
 ollama --version
+
 python run.py
